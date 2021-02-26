@@ -32,11 +32,12 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/precoAlcool"
+                android:id="@+id/cxPrecoAlcool"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
-                android:hint="Preço álcool: ex R$ 1.90" />
+                android:hint="Preço álcool: ex R$ 1.90"
+                android:inputType="numberDecimal" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -44,29 +45,34 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/precoGasolina"
+                android:id="@+id/cxPrecoGasolina"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
-                android:hint="Preço gasolina: ex R$ 2.90" />
+                android:hint="Preço gasolina: ex R$ 2.90"
+                android:inputType="numberDecimal" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="decidir"
             android:text="Calcular" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="limpar"
             android:text="Limpar" />
 
         <TextView
             android:id="@+id/txtResposta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal" />
+            android:gravity="center_horizontal"
+            android:paddingTop="40dp"
+            android:textSize="18sp" />
     </LinearLayout>
 </ScrollView>
